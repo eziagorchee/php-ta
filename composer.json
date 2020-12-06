@@ -1,0 +1,14 @@
+{
+    "name": "she-code-africa/php-ta",
+    "description": "PHP Assessment Template",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+      "classmap": [
+                    "src/"
+
+      ]
+
+    }
+}
