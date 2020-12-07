@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require __DIR__."/../index.php";
+require __DIR__."/../src/index.php";
 
 class IndexTest extends TestCase
 {
