@@ -1,5 +1,4 @@
-# php-ta
-PHP Track Assessment Template
+# PHP Track Assessment Template
 
 ## Instructions
 This is the template repo for the `Beginner Level` `PHP Track`. Please follow to the below instructions to get started.
@@ -8,6 +7,7 @@ This is the template repo for the `Beginner Level` `PHP Track`. Please follow to
 
 - Fork this repository.
 - Clone the repository to your local computer.
+
 #### [Optional] Install Test Dependencies
   - composer install
 
@@ -22,19 +22,38 @@ Within the cloned folder you should see the [index.php](./index.php) file. This 
     - git push origin master
 - submit your forked repository URL on the provided SCA Google Form
 
-## Problem Set
-
-Write the algorithm for the assessment exercise. The provided function would receive an argument and return result of the problem set.
-
 ## Example
 ```php
+# src/index.php
 
-function solution(n)
+function palindrom($input)
 {
-# Magic
+  // code goes here
 }
 
-<!-- solution(input()) -->
+function solution($input)
+{
+  return palindrom($input);
+}
+
+
+$input = (int)$argv[1];
+echo solution($input);
+```
+
+## Running 
+``` shell
+php -f src/index.php <input>
+
+```
+
+## Testing
+``` shell
+# Install depedencies
+composer install
+
+# run test
+./vendor/bin/phpunit tests
 ```
 
 ## Need Help

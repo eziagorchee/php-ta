@@ -1,27 +1,18 @@
 <?php
 
-function fibonacci($input)
+function palindrom($input)
 {
-  $arr = array();
-
-  for ($i=0; $i < $input; $i++)
-  {
-    if ($i === 0 || $i === 1){
-      $arr[$i] = $i;
-    } else {
-      $arr[$i] = $arr[$i - 1] + $arr[$i - 2];
-    }
-  }
-
-  return $arr;
+  // code goes here
 }
 
 function solution($input)
 {
-  // Solution
-  return fibonacci($input);
+  return palindrom($input);
 }
 
 
-$input = (int)$argv[1];
-echo solution($input);
+if (!count(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS)))
+{
+  $input = $argv[1];
+  var_dump(solution($input));
+}
