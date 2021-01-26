@@ -24,15 +24,7 @@ function palindrom($input)
       return true;
     } else{
       echo $input. " is not a palindrom"."<br>";
-  // $c= str_split(sort($a));
-  // $d= str_split(sort($b));
-  // if($c==$d){
-  //   return palindrom($input);
-  // } else{
-  //   echo "not a palindrom";
-  // }
-    // print_r($a);
-    // print_r($b);
+  
 return false;
   // code goes here
 }
